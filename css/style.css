@@ -12,6 +12,7 @@ h6 {
   padding:0;
   margin:0;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .clear-fix {
@@ -61,6 +62,12 @@ h5 {
 
 }
 
+#workExperience,
+#projects,
+#education,
+#mapDiv {
+  padding: 3em 0;
+}
 
 .date-text {
   font-style: italic;
@@ -86,10 +93,22 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #f5ae23;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 90%;
+}
+
+.regular-url {
+  color: #999;
+  text-transform: lowercase;
+  letter-spacing: 0;
+  font-size: 100%;
+  font-weight: 300;
 }
 
 .welcome-message {
@@ -127,7 +146,6 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
   background-color: #484848;
 }
@@ -166,6 +184,12 @@ span {
 
 #lets-connect {
   text-align: center;
+}
+
+.project-image {
+  width: 200px;
+  margin: 0;
+  padding: 30px 0;
 }
 
 /* Media queries to handle various device widths */
