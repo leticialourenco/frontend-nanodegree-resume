@@ -40,7 +40,7 @@ var education = {
 		{
 			"title" : "Front-end Nanodegree",
 			"school" : "Udacity",
-			"dates" : "2016",
+			"date" : "2016",
 			"url" : "https://www.udacity.com/"
 		}
 	]
@@ -123,8 +123,8 @@ bio.display = function() {
 	$("#header").append(formattedBiopic);
 	$("#header").append(formattedWelcomeMsg);
 
-
 	$("#header").append(HTMLskillsStart);
+
 	for (skill in bio.skills) {
 		formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
 		$("#skills").append(formattedSkill);
@@ -140,7 +140,7 @@ bio.display = function() {
 	$("#footerContacts").append(formattedEmail);
 	$("#footerContacts").append(formattedGithub);
 	$("#footerContacts").append(formattedLocation);
-}
+};
 
 
 education.display = function() {
@@ -173,13 +173,13 @@ education.display = function() {
 		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
 		var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
 		var formattedTitleSchool = formattedTitle + formattedSchool;
-		var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
+		var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].date);
 		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[onlineCourse].url);
 		$(".education-entry:last").append(formattedTitleSchool);
 		$(".education-entry:last").append(formattedDates);
 		$(".education-entry:last").append(formattedURL);
 	}
-}
+};
 
 
 work.display = function() {
@@ -198,7 +198,7 @@ work.display = function() {
 		$(".work-entry:last").append(formattedLocation);
 		$(".work-entry:last").append(formattedDescription);
 	}
-}
+};
 
 
 projects.display = function() {
@@ -220,7 +220,7 @@ projects.display = function() {
 			}
 		}
 	}
-} 
+}; 
 
 bio.display();
 education.display();
